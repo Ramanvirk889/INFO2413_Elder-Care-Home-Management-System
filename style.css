@@ -1,59 +1,91 @@
 *{
 font-family: 'Times New Roman', Times, serif;
-
-margin: 0px;
+margin:0px;
 padding:0px;
 }
 
-.index_form{
-    height:100vh;
+.idx_body{
+
     display: flex;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
+    justify-content: center;
+    align-items: center;
    
 }
+
+
+.index_form{
+    width:400px;
+    height:480px;
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+     align-items:center;
+  background-color:white;
+   color:white;
+   margin-top:80px;
+  margin-bottom:80px;
+   border-radius:20px;
+}
+.idx_login,.register_user{
+    color:teal;
+    font-weight:600;
+}
+
+
+.idx_img {
+    width: 180px;     
+    height: auto;       
+    display: block;
+    border-radius:20px;
+    
+     
+}
+.idx_img_container{width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom:20px;
+    }
+
+.idx_heading1{
+margin-top:7px;
+font-weight:600;
+ margin-bottom:20px;}
+
 fieldset{
+     width:350px;
     display:flex;
     flex-direction:column;
     align-items:center;
-    gap:8px;
-    background-color:beige;
-   min-height:330px;
-   width:90%;
-   min-width:290px;
+    gap:4px;
     border-radius:15px;
     padding:20px;
+    border:2px solid teal;
 }
 
 .form-label{
     font-size:18px;
     font-weight:550;
-    color: green;
+    color:teal;
     margin-bottom:0px;
-}
-
-.idx_heading1{
-color:green;
- font-weight:600;
- margin-bottom:4px;
- 
-}
-
-input{
-    width:80%;
-    max-width: 250px;
-    border-radius:4px;
-    height: 4vh;
-    background-color:white;
-    border:none;
-    color:darkgreen;
-    margin-bottom:4px; 
    
+} 
+input{
+    width:90%;
+    border-radius:9px;
+    background-color:white;
+    border:2px solid teal;
+    color:teal;
+    margin-bottom:8px; 
+    padding:7px;
+   
+}
+input::placeholder{
+       color:teal; 
+      opacity:0.9;
 }
 
 .idx_link{
-    color:green;font-size:0.88em;
+    color:teal;;font-size:0.88em;
    }
 
 .btn_container {
@@ -63,16 +95,28 @@ input{
     gap: 10px;                
     margin-top: 10px;         
 }
-.idx_btn{
-    
-      border: none;
-      height:5vh;
-      min-width:25px;
-      padding:5px;
-      border-radius:4px;
-      background-color:green;
-      color:white;
 
+.idx_btn{
+   min-width:90px;
+      border: none;
+      border-radius: 10px;
+      height:5vh;
+      padding-left:3px; 
+      padding-right:3px;
+     background-color:teal;
+      color:white;
+      border: 2px solid teal;
+
+
+}
+#cancel{
+   
+    background-color:rgb(169, 79, 79);
+    border: 2px solid rgb(169, 79, 79);
+    
+}
+#cancel:hover{
+    background-color:darkred;
 }
 .idx_btn:hover{
     background-color:darkgreen;
