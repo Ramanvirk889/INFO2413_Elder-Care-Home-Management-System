@@ -1,0 +1,79 @@
+*{
+font-family: 'Times New Roman', Times, serif;
+
+margin: 0px;
+padding:0px;
+}
+
+.index_form{
+    height:100vh;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+   
+}
+fieldset{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:8px;
+    background-color:beige;
+   min-height:330px;
+   width:90%;
+   min-width:290px;
+    border-radius:15px;
+    padding:20px;
+}
+
+.form-label{
+    font-size:18px;
+    font-weight:550;
+    color: green;
+    margin-bottom:0px;
+}
+
+.idx_heading1{
+color:green;
+ font-weight:600;
+ margin-bottom:4px;
+ 
+}
+
+input{
+    width:80%;
+    max-width: 250px;
+    border-radius:4px;
+    height: 4vh;
+    background-color:white;
+    border:none;
+    color:darkgreen;
+    margin-bottom:4px; 
+   
+}
+
+.idx_link{
+    color:green;font-size:0.88em;
+   }
+
+.btn_container {
+    display: flex;              
+    justify-content: center;  
+    align-items:center;
+    gap: 10px;                
+    margin-top: 10px;         
+}
+.idx_btn{
+    
+      border: none;
+      height:5vh;
+      min-width:25px;
+      padding:5px;
+      border-radius:4px;
+      background-color:green;
+      color:white;
+
+}
+.idx_btn:hover{
+    background-color:darkgreen;
+}
