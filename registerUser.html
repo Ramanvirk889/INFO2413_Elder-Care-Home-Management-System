@@ -13,14 +13,29 @@
     <h2 class="register_user">Register your account</h2>
    
 <form action='' method= 'post'><fieldset><br>
+   <div class="form-group">
+    <label class="form-label">Select User Role:</label><br>
+    
+    <input type="radio" id="staff" name="role" value="staff"> 
+    <label for="staff" class="radio-label">Staff</label>
 
+    <input type="radio" id="resident" name="role" value="resident"> 
+    <label for="resident" class="radio-label">Resident</label>
 
+    <input type="radio" id="family" name="role" value="family"> 
+    <label for="family" class="radio-label">Family</label>
+</div>
 <label class="form-label">Full name: </label><input type="name" id="name" name="name" placeholder="Enter your name">
 <label class="form-label">DOB(mm-dd-yy):</label><input type="date" id="date" name="date" >
 <label class="form-label">Email/Username: </label><input type="email" id="email" name="email" placeholder="Enter your email">
 
 <label class="form-label">Password:</label><input type="password" id="password" name="password" placeholder="Enter password">
+<label class="form-label">Confirm Password:</label><input type="password" id="confirm_password" name="confirm_password" placeholder="Confirm password">
+<label class="form-label">Resident/Employee ID:</label>
+<input type="text" id="id_number" name="id_number" placeholder="Enter ID (e.g. RES-101 or STF-202)">
 
+<label class="form-label">Phone Number:</label>
+<input type="tel" id="phone" name="phone" placeholder="Enter contact number">
 
 
 <div class="btn_container">
