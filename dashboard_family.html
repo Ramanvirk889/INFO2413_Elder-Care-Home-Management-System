@@ -9,7 +9,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
   
-    <title>Admin Dashboard</title>
+    <title>Family Dashboard</title>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
@@ -27,19 +27,16 @@
         <li class="nav-item" >
           <a class="nav-link active" aria-current="page" href="#"><i class="fa-regular fa-home"></i>Home </a>
         </li>
-        <li class="nav-item" >
-          <a class="nav-link active" aria-current="page" href="#"><i class="fa-regular fa-calendar-days"></i> My Schedule </a>
-        </li>
         
         <li class="nav-item dropdown">  
           <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-users"></i>
-             Residents 
+           My Loved Ones
           </a>
           <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">View all Residents</a></li>
+            <li><a class="dropdown-item" href="#"> view Health Trends</a></li>
             <li><a class="dropdown-item" href="#">View health summaries</a></li>
-            <li><a class="dropdown-item" href="#">Add Resident</a></li> 
-            <li><a class="dropdown-item" href="#">Edit/Remove Resident</a></li>
+            <li><a class="dropdown-item" href="#">Medication List</a></li> 
+            <li><a class="dropdown-item" href="#">Health status</a></li>
             <li> 
               <hr class="dropdown-divider">
             </li>
@@ -48,60 +45,56 @@
 
           <li class="nav-item dropdown">
            <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-user-tie"></i>
-            Staff 
+            Care Team
           </a>
           <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">View Staff</a></li>
-            <li><a class="dropdown-item" href="#">Add Staff</a></li>
-            <li><a class="dropdown-item" href="#">Edit/Remove Staff</a></li>
-            <li><a class="dropdown-item" href="#">Assign Staff</a></li>  
+            <li><a class="dropdown-item" href="#">View Caregivers</a></li>
+            <li><a class="dropdown-item" href="#">View Facility Doctor</a></li>
+            <li><a class="dropdown-item" href="#">Schedule a visit</a></li>
+           
             <li>   
               <hr class="dropdown-divider">
             </li>
-            <li><a class="dropdown-item" href="#">Staff schedule</a></li>
+            <li><a class="dropdown-item" href="#">Caregiver Notes</a></li>
           </ul></li>
 
        <li class="nav-item" >
           <a class="nav-link active" aria-current="page" href="#"><i class="fa-regular fa-bell"></i> Alerts</a>
         </li>
-        <li class="nav-item" >
-          <a class="nav-link active" aria-current="page" href="#"><i class="fa-regular fa-envelope"></i> Messages</a>
-        </li>
-       
-       
+
         <li class="nav-item dropdown">
-          <a class="nav-link active  dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            More
+           <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-envelope"></i>
+            Messages
           </a>
           <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Audit Logs</a></li>
-            <li><a class="dropdown-item" href="#">System Analytics</a></li>
-            <li>
-              <hr class="dropdown-divider">
-            </li>
-            <li><a class="dropdown-item" href="#">Medicines</a></li>
-            <li><a class="dropdown-item" href="#">Rooms</a></li>
-            <li><a class="dropdown-item" href="#">Manage family members</a></li>
-           
-          </ul>
-        </li>
-      </ul>
+            
+            <li><a class="dropdown-item" href="#">Inbox</a></li>
+            <li><a class="dropdown-item" href="#">Chat with Admin</a></li>
+            <li><a class="dropdown-item" href="#">Leave Note for Caregiver</a></li>
+            
+            
+            
+          </ul></li>
+       
+       
+        
+        
     </div>
   </div>
 </nav>
 
 <!-- Page Content -->
 <div class="container">
-  <h1 class="mt-4 " style="color:teal">Welcome to the Admin Dashboard!</h1>
+  <h1 class="mt-4 " style="color:teal">Welcome to the Family Dashboard!</h1>
     <div class="card shadow-sm mt-4">
   <div class="card-header bg-white d-flex justify-content-between align-items-center py-3">
-    <h5 class="mb-0 fw-normal" style="color: teal;">Resident Directory</h5>
+    <h5 class="mb-0 fw-normal" style="color: teal;">Weakly Health Trend</h5>
     
     <div class="input-group" style="width: 280px;">
       <span class="input-group-text bg-white border-end-0">
         <i class="bi bi-search" style="color: teal; font-size: 0.8rem;"></i>
       </span>
-      <input type="text" class="form-control form-control-sm border-start-0 ps-0" placeholder="Search by name..." id="medSearch">
+      <input type="text" class="form-control form-control-sm border-start-0 ps-0" placeholder="Search by date..." id="medSearch">
     </div>
   </div> 
   <div class="card-body">
@@ -109,10 +102,10 @@
       <table class="table table-hover align-middle">
         <thead class="table-light">
           <tr>
-            <th>Name</th>
-            <th>Room</th>
+            <th>Date</th>
             <th>Status</th>
-            <th>Action</th>
+            <th>Activity Level</th>
+            <th>Mood</th>
           </tr>
         </thead>
         <tbody>
@@ -131,13 +124,13 @@
 
 <div class="card shadow-sm mt-4">
   <div class="card-header bg-white d-flex justify-content-between align-items-center py-3">
-    <h5 class="mb-0 fw-normal" style="color: teal;">Active Caregivers & Assignments</h5>
+    <h5 class="mb-0 fw-normal" style="color: teal;">Care Team Directory</h5>
     
     <div class="input-group" style="width: 280px;">
       <span class="input-group-text bg-white border-end-0">
         <i class="bi bi-search" style="color: teal; font-size: 0.8rem;"></i>
       </span>
-      <input type="text" class="form-control form-control-sm border-start-0 ps-0" placeholder="Search by zone..." id="medSearch">
+      <input type="text" class="form-control form-control-sm border-start-0 ps-0" placeholder="Search by date..." id="medSearch">
     </div>
   </div> 
   <div class="card-body">
@@ -145,10 +138,10 @@
       <table class="table table-hover align-middle">
         <thead class="table-light">
           <tr>
+             <th>Date</th>
             <th>Caregiver</th>
-            <th>Assigned Zone</th>
-            <th>Current Task</th>
-            <th>Status</th>
+             <th>Shift</th>
+            <th>Quick Action</th>
           </tr>
         </thead>
         <tbody>
@@ -171,7 +164,7 @@
       <span class="input-group-text bg-white border-end-0">
         <i class="bi bi-search" style="color: teal; font-size: 0.8rem;"></i>
       </span>
-      <input type="text" class="form-control form-control-sm border-start-0 ps-0" placeholder="Search by resident..." id="medSearch">
+      <input type="text" class="form-control form-control-sm border-start-0 ps-0" placeholder="Search by medication..." id="medSearch">
     </div>
   </div> 
   <div class="card-body">
@@ -179,7 +172,7 @@
       <table class="table table-hover align-middle">
         <thead class="table-light">
           <tr>
-            <th>Resident</th>
+           <th> Date</th>
             <th>Medication</th>
             <th>Dosage</th>
             <th>Scheduled time</th>
@@ -191,33 +184,6 @@
           <tr>
             <td colspan="6" class="text-center py-5 text-muted fw-light">
           No records found. 
-        </td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
-</div>
-<div class="card shadow-sm mt-4">
-  <div class="card-header bg-white">
-    <h5 class="mb-0 fw-normal" style="color: teal;">Pending Family Connections</h5>
-  </div>
-  <div class="card-body">
-    <div class="table-responsive">
-      <table class="table table-hover align-middle">
-        <thead class="table-light">
-          <tr>
-            <th>Family name</th>
-            <th>Linked Resident</th>
-            <th>Relationship</th>
-            <th>Account Status</th>
-            <th>Action</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-             <td colspan="6" class="text-center py-5 text-muted fw-light">
-          No Pending task. 
         </td>
           </tr>
         </tbody>

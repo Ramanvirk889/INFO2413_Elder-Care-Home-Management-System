@@ -10,18 +10,11 @@
 <body class="idx_body">
 
 <div class="index_form"> 
-    <h2 class="register_user">Register user account</h2>
+    <h2 class="register_user">Register your account</h2>
    
 <form action='' method= 'post'><fieldset><br>
    <div class="form-group">
-    <label class="form-label">Select User Role:</label><br>
     
-    <input type="radio" id="staff" name="role" value="staff"> 
-    <label for="staff" class="radio-label">Staff</label>
-
-    <input type="radio" id="resident" name="role" value="resident"> 
-    <label for="resident" class="radio-label">Resident</label>
-
     
     
 </div>
@@ -31,14 +24,13 @@
 
 <label class="form-label">Password:<input type="password" id="password" name="password" placeholder="Enter password"></label>
 <label class="form-label">Confirm Password:<input type="password" id="confirm_password" name="confirm_password" placeholder="Confirm password"></label>
-<label class="form-label">Resident PHN/Employee ID:<input type="text" id="id_number" name="id_number" placeholder="Enter PHN or ID "></label>
 
 <label class="form-label">Phone Number:
 <input type="tel" id="phone" name="phone" placeholder="Enter contact number"></label>
-<label class="form-label">Emergency Phone Number:
-<input type="tel" id="emergency_phone" name="emergency_phone" placeholder="Enter emergency contact number"></label>
-
-
+<label class="form-label">Resident to Link:
+<input type="tel" id="Link_resident_name" name="link_resident_name" placeholder="Resident name"></label>
+<label class="form-label">Relationship to Resident:
+<input type="text" id="relationship" name="relationship" placeholder="relationship"></label>
 
 <div class="btn_container">
 <button type="submit" class="idx_btn"  name="register" id="register">Register</button>

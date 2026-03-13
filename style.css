@@ -5,26 +5,28 @@ padding:0px;
 }
 
 .idx_body{
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
    
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color:rgb(240, 240, 240);
 }
+    
 
 
 .index_form{
-    width:400px;
-    height:480px;
+   width:50vw;
+    height:auto;
     display: flex;
     flex-direction:column;
-    justify-content:center;
+justify-items: center;
      align-items:center;
   background-color:white;
    color:white;
    margin-top:80px;
   margin-bottom:80px;
-   border-radius:20px;
+  border-radius:15px;border: 2px solid teal;
+   
 }
 .idx_login,.register_user{
     color:teal;
@@ -53,14 +55,16 @@ font-weight:600;
  margin-bottom:20px;}
 
 fieldset{
-     width:350px;
+   
+    width:100%;
     display:flex;
     flex-direction:column;
-    align-items:center;
+    justify-content:center;
+        align-items:stretch;
     gap:4px;
-    border-radius:15px;
-    padding:20px;
-    border:2px solid teal;
+    
+    
+   
 }
 
 .form-label{
@@ -71,18 +75,27 @@ fieldset{
    
 } 
 input{
-    width:90%;
+    width:100%;
     border-radius:9px;
     background-color:white;
     border:2px solid teal;
     color:teal;
     margin-bottom:8px; 
     padding:7px;
-   
-}
+   }
 input::placeholder{
        color:teal; 
       opacity:0.9;
+}
+input[type="radio"] {
+    width: auto;
+    margin-right: 5px;
+}
+.radio-label {
+    font-size: 16px;
+    color: teal;
+    margin-right: 15px;
+    font-weight: normal;
 }
 
 .idx_link{
@@ -107,7 +120,7 @@ input::placeholder{
      background-color:teal;
       color:white;
       border: 2px solid teal;
-
+   margin-bottom: 20px;
 
 }
 #cancel{

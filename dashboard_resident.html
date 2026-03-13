@@ -9,32 +9,35 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
   
-    <title>Admin Dashboard</title>
+    <title>Resident Dashboard</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-white static-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
   <div class="container">
-    <a class="navbar-brand" href="#">
-      <img src="logo_half.png" alt="..." height="36"> <span class="fw-bold fs-4 text-uppercase" style="color:teal">Care Circle</span>
+    <a class="navbar-brand">
+      <img src="logo_darkbg.png" alt="..." height="36" > <span class="fw-bold fs-4 text-uppercase " style="color:white"> Care Circle | </span><span class="ms-2 fw-light fs-6 text-white">Elder Care Home Management</span>
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
+
+
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item" >
-          <a class="nav-link active" aria-current="page" href="#"><i class="fa-regular fa-calendar-days"></i> Today's Schedule </a>
+          <a class="nav-link active" aria-current="page" href="#"><i class="fa-regular fa-home"></i>Home </a>
         </li>
+       
         
         <li class="nav-item dropdown">  
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-users"></i>
-             Residents 
+          <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-users"></i>
+           My Day
           </a>
           <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">View all Residents</a></li>
-            <li><a class="dropdown-item" href="#">View health summaries</a></li>
-            <li><a class="dropdown-item" href="#">Add Resident</a></li> 
-            <li><a class="dropdown-item" href="#">Edit/Remove Resident</a></li>
+            <li><a class="dropdown-item" href="#">Schedule</a></li>
+            <li><a class="dropdown-item" href="#">Meals</a></li>
+            <li><a class="dropdown-item" href="#">Medications</a></li> 
+           
             <li> 
               <hr class="dropdown-divider">
             </li>
@@ -42,61 +45,54 @@
           </ul> </li>
 
           <li class="nav-item dropdown">
-           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-user-tie"></i>
-            Staff 
+           <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-user-tie"></i>
+            Care Team
           </a>
           <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">View Staff</a></li>
-            <li><a class="dropdown-item" href="#">Add Staff</a></li>
-            <li><a class="dropdown-item" href="#">Edit/Remove Staff</a></li>
-            <li><a class="dropdown-item" href="#">Assign Staff</a></li>  
-            <li>   
-              <hr class="dropdown-divider">
-            </li>
-            <li><a class="dropdown-item" href="#">Staff schedule</a></li>
+            <li><a class="dropdown-item" href="#">View my Care Team</a></li>
+            <li><a class="dropdown-item" href="#">View my health status</a></li>
+            <li><a class="dropdown-item" href="#">View my health history</a></li>
+            
+            
           </ul></li>
 
-       <li class="nav-item" >
-          <a class="nav-link active" aria-current="page" href="#"><i class="fa-regular fa-bell"></i> Emergency Alerts</a>
-        </li>
-        <li class="nav-item" >
-          <a class="nav-link active" aria-current="page" href="#"><i class="fa-regular fa-envelope"></i> Messages</a>
-        </li>
-       
-       
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            More
+          <li class="nav-item dropdown">
+           <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-user-tie"></i>
+           Self-Reports
           </a>
           <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Audit Logs</a></li>
-            <li><a class="dropdown-item" href="#">System Analytics</a></li>
-            <li>
-              <hr class="dropdown-divider">
-            </li>
-            <li><a class="dropdown-item" href="#">Medicines</a></li>
-            <li><a class="dropdown-item" href="#">Rooms</a></li>
-            <li><a class="dropdown-item" href="#">Manage family members</a></li>
-           
-          </ul>
+            <li><a class="dropdown-item" href="#">Create new Self-Report</a></li>
+            <li><a class="dropdown-item" href="#">View Self-Reports</a></li>
+            <li><a class="dropdown-item" href="#">Delete Self-Reports</a></li>
+            
+            
+          </ul></li>
+
+       
+        <li class="nav-item" >
+          <a class="nav-link active" aria-current="page" href="#"><i class="fa-regular fa-envelope"></i> Edit Profile</a>
         </li>
-      </ul>
+       
+       
+    
+           
+         
     </div>
   </div>
 </nav>
 
 <!-- Page Content -->
 <div class="container">
-  <h1 class="mt-4 " style="color:teal">Welcome to the Admin Dashboard!</h1>
+  <h1 class="mt-4 " style="color:teal">Welcome to the Resident Dashboard!</h1>
     <div class="card shadow-sm mt-4">
   <div class="card-header bg-white d-flex justify-content-between align-items-center py-3">
-    <h5 class="mb-0 fw-normal" style="color: teal;">Resident Directory</h5>
+    <h5 class="mb-0 fw-normal" style="color: teal;">Weakly Health Trends</h5>
     
     <div class="input-group" style="width: 280px;">
       <span class="input-group-text bg-white border-end-0">
         <i class="bi bi-search" style="color: teal; font-size: 0.8rem;"></i>
       </span>
-      <input type="text" class="form-control form-control-sm border-start-0 ps-0" placeholder="Search by name..." id="medSearch">
+      <input type="text" class="form-control form-control-sm border-start-0 ps-0" placeholder="Search by date..." id="medSearch">
     </div>
   </div> 
   <div class="card-body">
@@ -104,10 +100,10 @@
       <table class="table table-hover align-middle">
         <thead class="table-light">
           <tr>
-            <th>Name</th>
-            <th>Room</th>
+            <th>Date</th>
             <th>Status</th>
-            <th>Action</th>
+            <th>Activity Level</th>
+            <th>Mood</th>
           </tr>
         </thead>
         <tbody>
@@ -126,13 +122,13 @@
 
 <div class="card shadow-sm mt-4">
   <div class="card-header bg-white d-flex justify-content-between align-items-center py-3">
-    <h5 class="mb-0 fw-normal" style="color: teal;">Active Caregivers & Assignments</h5>
+    <h5 class="mb-0 fw-normal" style="color: teal;">Care Team Directory</h5>
     
     <div class="input-group" style="width: 280px;">
       <span class="input-group-text bg-white border-end-0">
         <i class="bi bi-search" style="color: teal; font-size: 0.8rem;"></i>
       </span>
-      <input type="text" class="form-control form-control-sm border-start-0 ps-0" placeholder="Search by zone..." id="medSearch">
+      <input type="text" class="form-control form-control-sm border-start-0 ps-0" placeholder="Search by date..." id="medSearch">
     </div>
   </div> 
   <div class="card-body">
@@ -140,10 +136,10 @@
       <table class="table table-hover align-middle">
         <thead class="table-light">
           <tr>
+             <th>Date</th>
             <th>Caregiver</th>
-            <th>Assigned Zone</th>
-            <th>Current Task</th>
-            <th>Status</th>
+             <th>Shift</th>
+            <th>Quick Action</th>
           </tr>
         </thead>
         <tbody>
@@ -166,7 +162,7 @@
       <span class="input-group-text bg-white border-end-0">
         <i class="bi bi-search" style="color: teal; font-size: 0.8rem;"></i>
       </span>
-      <input type="text" class="form-control form-control-sm border-start-0 ps-0" placeholder="Search by resident..." id="medSearch">
+      <input type="text" class="form-control form-control-sm border-start-0 ps-0" placeholder="Search by medication..." id="medSearch">
     </div>
   </div> 
   <div class="card-body">
@@ -174,7 +170,7 @@
       <table class="table table-hover align-middle">
         <thead class="table-light">
           <tr>
-            <th>Resident</th>
+             <th>Date</th>
             <th>Medication</th>
             <th>Dosage</th>
             <th>Scheduled time</th>
@@ -193,37 +189,6 @@
     </div>
   </div>
 </div>
-<div class="card shadow-sm mt-4">
-  <div class="card-header bg-white">
-    <h5 class="mb-0 fw-normal" style="color: teal;">Pending Family Connections</h5>
-  </div>
-  <div class="card-body">
-    <div class="table-responsive">
-      <table class="table table-hover align-middle">
-        <thead class="table-light">
-          <tr>
-            <th>Family name</th>
-            <th>Linked Resident</th>
-            <th>Relationship</th>
-            <th>Account Status</th>
-            <th>Action</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-             <td colspan="6" class="text-center py-5 text-muted fw-light">
-          No Pending task. 
-        </td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
-</div>
-
-
-</div>
-
 
 <div class="container my-5"> </div>
   <!-- Footer -->
@@ -240,7 +205,7 @@
           <!--Grid column-->
           <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
             <div class="d-flex align-items-center mb-2">
-      <img src="logo_half.png" alt="Logo" height="30" class="me-2">
+      <img src="logo_darkbg.png" alt="Logo" height="30" class="me-2">
       <span class="fs-4 fw-normal text-uppercase white ">Care Circle</span>
     </div>
               <pre style="font-family:'Times New Roman', Times, serif">Community | Support | Guidance</pre>  
@@ -345,7 +310,7 @@
       <section class="">
         <p class="d-flex justify-content-center align-items-center">
           <span class="me-3">Are you a family member? Register here to monitor resident wellbeing</span>
-          <button type="button" class="btn btn-outline-light btn-rounded">
+          <button type="button" class="btn btn-outline-light btn-rounded" onclick="window.location.href='register_form_family.html'">
             Family Sign up!
           </button>
         </p>
