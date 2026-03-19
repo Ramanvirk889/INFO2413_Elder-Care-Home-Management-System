@@ -9,43 +9,38 @@
 </head>
 <body class="idx_body">
 
-<div class="index_form"> 
-    <h2 class="register_user">Register user account</h2>
+    
    
-<form action='' method= 'post'><fieldset><br>
-   <div class="form-group">
+<form action='' method= 'post'><fieldset>
+    <h2 class="register_user">Add user account</h2>
+    <div class="radio-group">
     <label class="form-label">Select User Role:</label><br>
     
     <input type="radio" id="staff" name="role" value="staff"> 
     <label for="staff" class="radio-label">Staff</label>
 
-    <input type="radio" id="resident" name="role" value="resident"> 
-    <label for="resident" class="radio-label">Resident</label>
+    <input type="radio" id="resident" name="role" value="resident"><label for="resident" class="radio-label">Resident</label> </div>
 
-    
-    
-</div>
-<label class="form-label">Full name:<input type="name" id="name" name="name" placeholder="Enter your name"> </label>
-<label class="form-label">DOB(mm-dd-yy):<input type="date" id="date" name="date" ></label>
-<label class="form-label">Email/Username: <input type="email" id="email" name="email" placeholder="Enter your email"></label>
+<label class="form-label">Full name: </label><input type="name"  name="name" placeholder="Enter your name">
+<label class="form-label">DOB(mm-dd-yy):</label><input type="date" id="date" name="date">
+<label class="form-label">Email/Username:</label><input type="email"  name="email" placeholder="Enter your email">
 
-<label class="form-label">Password:<input type="password" id="password" name="password" placeholder="Enter password"></label>
-<label class="form-label">Confirm Password:<input type="password" id="confirm_password" name="confirm_password" placeholder="Confirm password"></label>
-<label class="form-label">Resident PHN/Employee ID:<input type="text" id="id_number" name="id_number" placeholder="Enter PHN or ID "></label>
+<label class="form-label">Password:</label><input type="password" id="password" name="password" placeholder="Enter password">
+<label class="form-label">Confirm Password:</label><input type="password" id="confirm_password" name="confirm_password" placeholder="Confirm password">
+<label class="form-label">PHN/Emp. ID:</label><input type="text" id="id_number" name="id_number" placeholder="Enter PHN or emp.ID ">
 
-<label class="form-label">Phone Number:
-<input type="tel" id="phone" name="phone" placeholder="Enter contact number"></label>
-<label class="form-label">Emergency Phone Number:
-<input type="tel" id="emergency_phone" name="emergency_phone" placeholder="Enter emergency contact number"></label>
+<label class="form-label">Phone Number:</label>
+    <input type="tel" name="phone" placeholder="Enter contact number">
+    <label class="form-label">Emergency Phone Number:</label>
+<input type="tel" id="emergency_phone" name="emergency_phone" placeholder="Enter emergency contact number">
 
 
 
 <div class="btn_container">
-<button type="submit" class="idx_btn"  name="register" id="register">Register</button>
+<button type="submit" class="idx_btn"  name="register" id="register">Add User</button>
 <button type= "reset" class='idx_btn' name="cancel" id="cancel">Cancel</button></div>
 
 </fieldset>
-</form>
-</div>   
+</form>  
 </body>
 </html>

@@ -5,7 +5,6 @@ padding:0px;
 }
 
 .idx_body{
-   
     display:flex;
     justify-content:center;
     align-items:center;
@@ -14,25 +13,32 @@ padding:0px;
     
 
 
-.index_form{
-   width:50vw;
+form{
+   width: 55vw;
     height:auto;
     display: flex;
-    flex-direction:column;
-justify-items: center;
-     align-items:center;
-  background-color:white;
+flex-direction:column;
+justify-content: center;
+align-items:center;;
    color:white;
    margin-top:80px;
   margin-bottom:80px;
-  border-radius:15px;border: 2px solid teal;
+  
    
+  
 }
 .idx_login,.register_user{
+    
     color:teal;
     font-weight:600;
 }
 
+.radio-group{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    margin-bottom:20px;
+}
 
 .idx_img {
     width: 180px;     
@@ -42,7 +48,7 @@ justify-items: center;
     
      
 }
-.idx_img_container{width: 100%;
+.idx_img_container{width: 90%;
     display: flex;
     justify-content: center;
     margin-bottom:20px;
@@ -55,27 +61,31 @@ font-weight:600;
  margin-bottom:20px;}
 
 fieldset{
-   
-    width:100%;
+   width: 80%;
+   height:auto;
     display:flex;
     flex-direction:column;
-    justify-content:center;
-        align-items:stretch;
-    gap:4px;
-    
-    
-   
+    justify-content: center;
+    align-items:center; 
+    border-radius:15px;
+    background-color:white;
+    border: 2px solid teal;
 }
 
+
 .form-label{
+    align-self:flex-start;
+    margin-left:45px;
+    padding-left:10px;
     font-size:18px;
     font-weight:550;
     color:teal;
+    margin-top:5px;
     margin-bottom:0px;
-   
-} 
-input{
-    width:100%;
+    margin-right:20px;
+   } 
+input[type="email"],input[type="password"],input[type="name"],input[type="date"],input[type="tel"],input[type="text"]{
+    width:80%;
     border-radius:9px;
     background-color:white;
     border:2px solid teal;
@@ -89,12 +99,14 @@ input::placeholder{
 }
 input[type="radio"] {
     width: auto;
+ 
     margin-right: 5px;
 }
 .radio-label {
     font-size: 16px;
     color: teal;
-    margin-right: 15px;
+    margin-right: 10px;
+    margin-left:10px;
     font-weight: normal;
 }
 
