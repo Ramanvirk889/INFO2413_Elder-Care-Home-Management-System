@@ -227,17 +227,17 @@
          <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
     <h5 >Quick Navigation</h5>
     <ul class="list-unstyled mb-0">
-        <li>
+<li>
             <a href="admin_dashboard.php" class="text-white text-decoration-none small">Admin Dashboard</a>
         </li>
         <li>
-            <a href="dashboard_caregiver.html" class="text-white text-decoration-none small">Caregiver Portal</a>
+            <a href="caregiver_dashboard.php" class="text-white text-decoration-none small">Caregiver Portal</a>
         </li>
         <li>
-            <a href="dashboard_resident.html" class="text-white text-decoration-none small">Resident View</a>
+            <a href="resident_dashboard.php" class="text-white text-decoration-none small">Resident View</a>
         </li>
         <li>
-            <a href="dashboard_family.html" class="text-white text-decoration-none small">Family Access</a>
+            <a href="family_dashboard.php" class="text-white text-decoration-none small">Family Access</a>
         </li>
     </ul>
 </div>
