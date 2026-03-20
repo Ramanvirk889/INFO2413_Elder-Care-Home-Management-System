@@ -13,7 +13,7 @@ padding:0px;
     
 
 
-form{
+.idx_form{
    width: 55vw;
     height:auto;
     display: flex;
@@ -84,7 +84,7 @@ fieldset{
     margin-bottom:0px;
     margin-right:20px;
    } 
-input[type="email"],input[type="password"],input[type="name"],input[type="date"],input[type="tel"],input[type="text"]{
+.idx_input{
     width:80%;
     border-radius:9px;
     background-color:white;
@@ -122,6 +122,19 @@ input[type="radio"] {
     margin-top: 10px;         
 }
 
+input[id=profile_picture]::-webkit-file-upload-button{
+    min-width:90px;
+      border: none;
+      border-radius: 10px;
+      height:5vh;
+      padding-left:3px; 
+      padding-right:3px;
+     background-color:teal;
+      color:white;
+      border: none;
+ 
+
+}
 .idx_btn{
    min-width:90px;
       border: none;
@@ -147,3 +160,5 @@ input[type="radio"] {
 .idx_btn:hover{
     background-color:darkgreen;
 }
+
+

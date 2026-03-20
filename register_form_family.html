@@ -9,28 +9,32 @@
 </head>
 <body class="idx_body">
 
-<div class="index_form"> 
-    <h2 class="register_user">Register your account</h2>
+
    
-<form action='' method= 'post'><fieldset><br>
+   
+<form class= "idx_form" action='' method= 'post'><fieldset><br>
+     <h2 class="register_user">Register your account</h2>
    <div class="form-group">
     
     
     
 </div>
-<label class="form-label">Full name:<input type="name" id="name" name="name" placeholder="Enter your name"> </label>
-<label class="form-label">DOB(mm-dd-yy):<input type="date" id="date" name="date" ></label>
-<label class="form-label">Email/Username: <input type="email" id="email" name="email" placeholder="Enter your email"></label>
+<label class="form-label"> Full name:</label><input class="idx_input" type="name" id="name" name="name" placeholder="Enter your name">
+<label class="form-label">DOB(mm-dd-yy):</label><input class="idx_input" type="date" id="date" name="date" >
+<label class="form-label">Email/Username: </label><input class="idx_input" type="email" id="email" name="email" placeholder="Enter your email">
 
-<label class="form-label">Password:<input type="password" id="password" name="password" placeholder="Enter password"></label>
-<label class="form-label">Confirm Password:<input type="password" id="confirm_password" name="confirm_password" placeholder="Confirm password"></label>
+<label class="form-label">Password:</label><input class="idx_input" type="password" id="password" name="password" placeholder="Enter password">
+<label class="form-label">Confirm Password:</label><input class="idx_input" type="password" id="confirm_password" name="confirm_password" placeholder="Confirm password">
 
-<label class="form-label">Phone Number:
-<input type="tel" id="phone" name="phone" placeholder="Enter contact number"></label>
-<label class="form-label">Resident to Link:
-<input type="tel" id="Link_resident_name" name="link_resident_name" placeholder="Resident name"></label>
-<label class="form-label">Relationship to Resident:
-<input type="text" id="relationship" name="relationship" placeholder="relationship"></label>
+<label class="form-label">Phone Number:</label>
+<input class="idx_input" type="tel" id="phone" name="phone" placeholder="Enter contact number">
+<label class="form-label">Resident to Link:</label>
+<input class="idx_input" type="tel" id="Link_resident_name" name="link_resident_name" placeholder="Resident name">
+<label class="form-label">Relationship to Resident:</label>
+<input class="idx_input" type="text" id="relationship" name="relationship" placeholder="relationship">
+<label class="form-label">Choose Profile Picture:</label>
+<input class="idx_input" type="file" id="profile_picture" name="profile_picture" accept="image/*">
+
 
 <div class="btn_container">
 <button type="submit" class="idx_btn"  name="register" id="register">Register</button>
@@ -38,6 +42,6 @@
 
 </fieldset>
 </form>
-</div>   
+  
 </body>
 </html>
